@@ -1,0 +1,52 @@
+.flexing {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-bottom: 20px;
+   
+  }
+  @media screen and (min-width: 1000px) {
+    .flexing {
+      flex-direction: row;
+    }
+  }
+  
+  .section {
+    flex: 1;
+    position: relative;
+    transition: 0.5s ease;
+  }
+  .section--yellow {
+    background-image: url('https://www.music3000.fr/modules/posslideshows/images/51768e894efbb13b84f3f76abf01ae523ecdebda_martin20th.jpg');
+
+  background-size: 800px 500px ;
+  background-repeat: no-repeat;
+}
+  .section--pink {
+    background-image: url('https://www.music3000.fr/modules/posslideshows/images/c60693a64b8bb60c7970c8f1f5652a2cc343d866_banni%C3%A8re%20casio%20privia.png');
+    background-size: 800px 500px;
+    background-repeat: no-repeat;
+  }
+  .section--green {
+    background-image: url('https://www.music3000.fr/modules/posslideshows/images/9597d7109e8f1b35d3e628701acfbe1b3ecabd9b_McCready.png');
+
+    background-size: 800px 500px;
+    background-repeat: no-repeat;
+  }
+  .section:hover, .section:active, .section:focus {
+    flex: 3;
+  }
+  .section:hover .title, .section:active .title, .section:focus .title {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  @media screen and (min-width: 1000px) {
+    .section:hover .title, .section:active .title, .section:focus .title {
+      transform: translate(-50%, -50%) scale(1.25);
+    }
+  }
+ 
+  @media screen and (min-width: 1000px) {
+    .section .title {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
